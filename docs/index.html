@@ -110,15 +110,16 @@
 
 <html>
   <head>
-		<title>TM2T: Reciprocal Generation of 3D Human Motions and Texts</title>
+		<title>TM2D: Bimodality Driven 3D Dance Generation via Music-Text Integration</title>
 <!-- 		<meta property="og:image" content="http://people.eecs.berkeley.edu/~tinghuiz/projects/mpi/images/teaser.png"/>
 		<meta property="og:title" content="Stereo Magnification: Learning View Synthesis using Multiplane Images" /> -->
   </head>
 
   <body>
     <br>
+    <br>
     <center>
-    <span style="font-size:36px">TM2T: Stochastic and Tokenized Modeling for the Reciprocal Generation of 3D Human Motions and Texts</span>
+    <span style="font-size:35px">TM2D: Bimodality Driven 3D Dance Generation via Music-Text Integration</span>
 	</center>
     
 	<br>
@@ -128,25 +129,54 @@
 
 		<td align=center width=100px>
 		<center>
-		<span style="font-size:20px"><a href="https://ericguo5513.github.io/">Chuan Guo</a></span>
+		<span style="font-size:20px"><a href="https://scholar.google.com.sg/citations?user=zHKIX_gAAAAJ&hl=zh-CN">Kehong Gong<sup>1, 2, *</sup></a></span>
 		</center>
 		</td>
 		
 		<td align=center width=100px>
 		<center>
-		<span style="font-size:20px"><a href="https://sites.google.com/site/xinxinzuohome/home">Xinxin Zuo</a></span>
+		<span style="font-size:20px"><a href="https://dongzelian.com/">Dongze Lian<sup>1</sup></a></span>
 		</center>
 		</td>
 
 		<td align=center width=100px>
 		<center>
-		<span style="font-size:20px"><a href="https://sites.google.com/site/senwang1312home/">Sen Wang</a></span>
+		<span style="font-size:20px"><a href="https://hchang95.github.io/">Heng Chang<sup>2</sup></a></span>
 		</center>
 		</td>
 
 		<td align=center width=100px>
 		<center>
-		<span style="font-size:20px"><a href="https://www.ece.ualberta.ca/~lcheng5/">Li Cheng</a></span>
+		<span style="font-size:20px"><a href="https://ericguo5513.github.io/">Chuan Guo<sup>3</sup></a></span>
+		</center>
+		</td>
+
+		<td align=center width=100px>
+		<center>
+		<span style="font-size:20px"><a href="https://sites.google.com/site/xinxinzuohome/home">Xinxin Zuo<sup>3</sup></a></span>
+		</center>
+		</td>
+
+	 </tr>
+	</table>
+
+	<table align=center width=700px>
+  	 <tr>
+	 
+		<td align=center width=100px>
+		<center>
+		<span style="font-size:20px">Zhihang Jiang<sup>1</sup></a></span>
+		</center>
+		</td>
+
+		<td align=center width=100px>
+		<center>
+		<span style="font-size:20px">Michael Bi Mi<sup>2</sup></a></span>
+		</center>
+		</td>
+		<td align=center width=100px>
+		<center>
+		<span style="font-size:20px"><a href="https://sites.google.com/site/sitexinchaowang/">Xinchao Wang<sup>1</sup></a></span>
 		</center>
 		</td>
 
@@ -159,9 +189,22 @@
   	 <tr>
 		<td align=center width=110px>
 		<center>
-		<span style="font-size:18px">University of Alberta</span></center>
+		<span style="font-size:18px"><sup>1</sup>National University of Singapore</span></center>
 		</center>
 		</td>
+
+		<td align=center width=110px>
+		<center>
+		<span style="font-size:18px"><sup>2</sup>Huawei International Pte Ltd</span></center>
+		</center>
+		</td>
+
+		<td align=center width=110px>
+		<center>
+		<span style="font-size:18px"><sup>3</sup>University of Alberta</span></center>
+		</center>
+		</td>
+
 	 </tr>
 	</table>
 
@@ -169,21 +212,21 @@
 
 	<table align=center width=500px>
   	 <tr>
-		<td align=center width=50px>
+		<!-- <td align=center width=50px>
 		<center>
 		<span style="font-size:18px"><a href="https://github.com/EricGuo5513/HumanML3D">[Data]</a></span>
 		</center>
-		</td>
+		</td> -->
 
 		<td align=center width=50px>
 		<center>
-		<span style="font-size:18px"><a href="https://github.com/EricGuo5513/TM2T">[Code]</a></span>
+		<span style="font-size:18px"><a href="https://github.com/Garfield-kh/TM2D">[Code]</a></span>
 		</center>
 		</td>
 
 		<td align=center width=50px>
 		<center>
-		<span style="font-size:18px">ECCV 2022 <a href="http://arxiv.org/abs/2207.01696">[Paper]</a></span>
+		<span style="font-size:18px"><a href="http://arxiv.org/abs/xxx">[Paper]</a></span>
 		</center>
 		</td>
 		
@@ -193,9 +236,9 @@
   		  <br>
   		  <table align=center width=900px>
   			  <tr>
-  	              <td width=600px>
+  	              <td width=800px>
   					<center>
-  	                	<a href="./teaser_image.png"><img src = "./teaser_image.png" height="300px"></img></href></a><br>
+  	                	<a href="./teaser_image.png"><img src = "./teaser_image.png" height="220px"></img></href></a><br>
 					</center>
   	              </td>
   	          </tr>
@@ -203,7 +246,7 @@
 
       	  <br>
       	  <p style="text-align:justify">
-          	 Inspired by the strong ties between vision and language, the two intimate human sensing and communication modalities, our paper aims to explore the generation of 3D human full-body motions from texts, as well as its reciprocal task, shorthanded for text2motion and motion2text, respectively. To tackle the existing challenges, especially to enable the generation of multiple distinct motions from the same text, and to avoid the undesirable production of trivial motionless pose sequences, we propose the use of motion token, a discrete and compact motion representation. This provides one level playing ground when considering both motions and text signals, as the motion and text tokens, respectively. Moreover, our motion2text module is integrated into the inverse alignment process of our text2motion training pipeline, where a significant deviation of synthesized text from the input text would be penalized by a large training loss; empirically this is shown to effectively improve performance. Finally, the mappings in-between the two modalities of motions and texts are facilitated by adapting the neural model for machine translation (NMT) to our context. This autoregressive modeling of the distribution over discrete motion tokens further enables non-deterministic production of pose sequences, of variable lengths, from an input text. Our approach is flexible, could be used for both text2motion and motion2text tasks. Empirical evaluations on two benchmark datasets demonstrate the superior performance of our approach on both tasks over a variety of state-of-the-art methods.
+          	 We propose a new task that simultaneously utilizes both music and text for 3D dance generation. Different from the existing works that generate dance through a single modality such as music, we hope that the instructive information provided by text can guide humans to perform richer movements while dancing. However, the existing datasets only contain paired motion with a single modality, e.g., music-dance or text-motion. Tackling this challenge, we utilize a 3D human motion VQ-VAE to project the motions of the two datasets into a latent space that consists of a series of quantized vectors so that the motion token from two datasets with different distributions can be effectively mixed for training. Furthermore, we propose a cross modal transformer architecture to integrate text instructions to generate the 3D dance without degrading the performance of music-conditioned dance generation. To better evaluate the quality of the generated motion, we introduce two metrics, MDP and Freezing score, to measure the coherence and freezing percentage of the generated motion. Extensive experiments show that our approach can generate realistic and coherent dance motion conditioned on both music and text while keeping the comparable performance conditioned on two single modalities (i.e., music2dance, text2motion). 
       	  </p>
 
 
@@ -214,13 +257,14 @@
 	 		<center><h1>Paper</h1></center>
   			  <tr>
   			  		<td width=50px align=left></td>
-				  <td><a href="http://arxiv.org/abs/2207.01696"><img style="height:180px" src="./eccv_paper.png"/></a></td>
+				  <td><a href="http://arxiv.org/abs/xxx"><img style="height:180px" src="./paper_snapshot.png"/></a></td>
 				  <td width=10px align=left></td>
-				  <td><span style="font-size:14pt">TM2T: Stochastic and Tokenized Modeling for the Reciprocal Generation of 3D Human Motions and Texts<br>
-                          <i>Chuan Guo, Xinxin Zuo, Sen Wang, Li Cheng</i><br>
-				  ECCV, 2022<br>
+				  <td><span style="font-size:14pt">TM2D: Bimodality Driven 3D Dance Generation via Music-Text Integration<br>
+                          <i>Kehong Gong, Dongze Lian, Heng Chang, Chuan Guo, Xinxin Zuo, Zhihang Jiang, Michael Bi Mi, Xinchao Wang</i><br>
+                          <br>
+				  ArXiv, 2023<br>
 				  <br>
-				  <a href="http://arxiv.org/abs/2207.01696">[Paper]</a>
+				  <a href="http://arxiv.org/abs/xxx">[Paper]</a>
 				  &nbsp; &nbsp;
                    		 <a href="./Bibtex.txt">[Bibtex]</a>
                    		 </span>
@@ -238,7 +282,7 @@
 				<tr height="600px">
 					<td valign="top" width=1000px>
 					<center>
-						<iframe width="950" height="500" src="https://www.youtube.com/embed/k7BRyxAxsfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			
+						<iframe width="950" height="550" src="https://www.youtube.com/embed/6QQFXG4s7iQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>		
 					</center>
 					</td>
 				</tr>
@@ -256,13 +300,13 @@
 		<center><h1>Try Our Code</h1></center>
   		  <table align=center width=900>
 			<tr><center>
-                          <a href='https://github.com/EricGuo5513/TM2T'><img class="round" style="height:400" src="./framework.png"/></a>
+                          <a href='https://github.com/Garfield-kh/TM2D'><img class="round" style="height:400" src="./framework.png"/></a>
                         </center></tr>
           	  </table>
 
     	  <table align=center width=800px>
       		<tr><center> <br>
-        	<span style="font-size:28px">&nbsp;<a href='https://github.com/EricGuo5513/TM2T'>[GitHub]</a>
+        	<span style="font-size:28px">&nbsp;<a href='https://github.com/Garfield-kh/TM2D'>[GitHub]</a>
           
         	<span style="font-size:28px"></a></span>
       		<br>
@@ -279,12 +323,17 @@
   	              <td>
   					<left>
 	  		  <center><h1>Acknowledgements</h1></center>
-	  		    This work was partly supported by the NSERC Discovery, UAHJIC, and CFIJELF grants. I also appreciate that the university of Alberta fund me with the Alberta Graduate Excellence Scholarship. This webpage template was borrowed from <a href="https://richzhang.github.io/colorization/">here</a>.
+	  		    This webpage template was borrowed from <a href="https://richzhang.github.io/colorization/">here</a>.
 
 			</left>
 				</td>
 			</tr>
 		</table>
+
+		<p>
+  		  	<!-- <br><sup>*</sup>C. Chan is currently a graduate student at MIT CSAIL.</br> -->
+  		  	<sup>*</sup>Equal contribution.</br>
+  		  </p>
 
 </body>
 </html>
