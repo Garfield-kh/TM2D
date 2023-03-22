@@ -1,0 +1,290 @@
+<style type="text/css">
+	body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight:300;
+		font-size:18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1100px;
+	}
+
+	h1 {
+		font-weight:300;
+	}
+
+	.disclaimerbox {
+		background-color: #eee;
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+		padding: 20px;
+	}
+
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+
+	img.rounded {
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #208799;
+	}
+
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		        5px 5px 0 0px #fff, /* The second layer */
+		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		        10px 10px 0 0px #fff, /* The third layer */
+		        10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		        15px 15px 0 0px #fff, /* The fourth layer */
+		        15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		        20px 20px 0 0px #fff, /* The fifth layer */
+		        20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		        25px 25px 0 0px #fff, /* The fifth layer */
+		        25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		        5px 5px 0 0px #fff, /* The second layer */
+		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		        10px 10px 0 0px #fff, /* The third layer */
+		        10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+
+	.vert-cent {
+		position: relative;
+	    top: 50%;
+	    transform: translateY(-50%);
+	}
+
+	hr
+	{
+		border: 0;
+		height: 1.5px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+
+	p.small {
+		font-size: 12px
+	}
+</style>
+
+<html>
+  <head>
+		<title>TM2T: Reciprocal Generation of 3D Human Motions and Texts</title>
+<!-- 		<meta property="og:image" content="http://people.eecs.berkeley.edu/~tinghuiz/projects/mpi/images/teaser.png"/>
+		<meta property="og:title" content="Stereo Magnification: Learning View Synthesis using Multiplane Images" /> -->
+  </head>
+
+  <body>
+    <br>
+    <center>
+    <span style="font-size:36px">TM2T: Stochastic and Tokenized Modeling for the Reciprocal Generation of 3D Human Motions and Texts</span>
+	</center>
+    
+	<br>
+  	<table align=center width=900px>
+  	 <tr>
+	 
+
+		<td align=center width=100px>
+		<center>
+		<span style="font-size:20px"><a href="https://ericguo5513.github.io/">Chuan Guo</a></span>
+		</center>
+		</td>
+		
+		<td align=center width=100px>
+		<center>
+		<span style="font-size:20px"><a href="https://sites.google.com/site/xinxinzuohome/home">Xinxin Zuo</a></span>
+		</center>
+		</td>
+
+		<td align=center width=100px>
+		<center>
+		<span style="font-size:20px"><a href="https://sites.google.com/site/senwang1312home/">Sen Wang</a></span>
+		</center>
+		</td>
+
+		<td align=center width=100px>
+		<center>
+		<span style="font-size:20px"><a href="https://www.ece.ualberta.ca/~lcheng5/">Li Cheng</a></span>
+		</center>
+		</td>
+
+	 </tr>
+	</table>
+	
+	<br>
+
+	<table align=center width=800px>
+  	 <tr>
+		<td align=center width=110px>
+		<center>
+		<span style="font-size:18px">University of Alberta</span></center>
+		</center>
+		</td>
+	 </tr>
+	</table>
+
+	<br>
+
+	<table align=center width=500px>
+  	 <tr>
+		<td align=center width=50px>
+		<center>
+		<span style="font-size:18px"><a href="https://github.com/EricGuo5513/HumanML3D">[Data]</a></span>
+		</center>
+		</td>
+
+		<td align=center width=50px>
+		<center>
+		<span style="font-size:18px"><a href="https://github.com/EricGuo5513/TM2T">[Code]</a></span>
+		</center>
+		</td>
+
+		<td align=center width=50px>
+		<center>
+		<span style="font-size:18px">ECCV 2022 <a href="http://arxiv.org/abs/2207.01696">[Paper]</a></span>
+		</center>
+		</td>
+		
+	 </tr>
+	</table>
+ 
+  		  <br>
+  		  <table align=center width=900px>
+  			  <tr>
+  	              <td width=600px>
+  					<center>
+  	                	<a href="./teaser_image.png"><img src = "./teaser_image.png" height="300px"></img></href></a><br>
+					</center>
+  	              </td>
+  	          </tr>
+  		  </table>
+
+      	  <br>
+      	  <p style="text-align:justify">
+          	 Inspired by the strong ties between vision and language, the two intimate human sensing and communication modalities, our paper aims to explore the generation of 3D human full-body motions from texts, as well as its reciprocal task, shorthanded for text2motion and motion2text, respectively. To tackle the existing challenges, especially to enable the generation of multiple distinct motions from the same text, and to avoid the undesirable production of trivial motionless pose sequences, we propose the use of motion token, a discrete and compact motion representation. This provides one level playing ground when considering both motions and text signals, as the motion and text tokens, respectively. Moreover, our motion2text module is integrated into the inverse alignment process of our text2motion training pipeline, where a significant deviation of synthesized text from the input text would be penalized by a large training loss; empirically this is shown to effectively improve performance. Finally, the mappings in-between the two modalities of motions and texts are facilitated by adapting the neural model for machine translation (NMT) to our context. This autoregressive modeling of the distribution over discrete motion tokens further enables non-deterministic production of pose sequences, of variable lengths, from an input text. Our approach is flexible, could be used for both text2motion and motion2text tasks. Empirical evaluations on two benchmark datasets demonstrate the superior performance of our approach on both tasks over a variety of state-of-the-art methods.
+      	  </p>
+
+
+		  <hr>
+		  <div id=paper>
+		 <!-- <table align=center width=550px> -->
+  		  <table align=center width=1100>
+	 		<center><h1>Paper</h1></center>
+  			  <tr>
+  			  		<td width=50px align=left></td>
+				  <td><a href="http://arxiv.org/abs/2207.01696"><img style="height:180px" src="./eccv_paper.png"/></a></td>
+				  <td width=10px align=left></td>
+				  <td><span style="font-size:14pt">TM2T: Stochastic and Tokenized Modeling for the Reciprocal Generation of 3D Human Motions and Texts<br>
+                          <i>Chuan Guo, Xinxin Zuo, Sen Wang, Li Cheng</i><br>
+				  ECCV, 2022<br>
+				  <br>
+				  <a href="http://arxiv.org/abs/2207.01696">[Paper]</a>
+				  &nbsp; &nbsp;
+                   		 <a href="./Bibtex.txt">[Bibtex]</a>
+                   		 </span>
+				  </td>
+
+              </tr>
+  		  </table>
+
+		  <br>
+
+  		  	<hr>
+			<center><h1>Demo Video</h1>
+
+			<table align=center width=1100px>
+				<tr height="600px">
+					<td valign="top" width=1000px>
+					<center>
+						<iframe width="950" height="500" src="https://www.youtube.com/embed/k7BRyxAxsfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			
+					</center>
+					</td>
+				</tr>
+			</table>
+			</center>
+		<br>
+	  
+	  	<hr>
+
+	  </span>
+	</td>
+	</div>
+
+	<div id='code'>
+		<center><h1>Try Our Code</h1></center>
+  		  <table align=center width=900>
+			<tr><center>
+                          <a href='https://github.com/EricGuo5513/TM2T'><img class="round" style="height:400" src="./framework.png"/></a>
+                        </center></tr>
+          	  </table>
+
+    	  <table align=center width=800px>
+      		<tr><center> <br>
+        	<span style="font-size:28px">&nbsp;<a href='https://github.com/EricGuo5513/TM2T'>[GitHub]</a>
+          
+        	<span style="font-size:28px"></a></span>
+      		<br>
+      		</center></tr>
+  		  </table>
+	 		
+  			  	
+  		 </div>
+
+  		 <br>
+  		 <hr>
+  		  <table align=center width=1100px>
+  			  <tr>
+  	              <td>
+  					<left>
+	  		  <center><h1>Acknowledgements</h1></center>
+	  		    This work was partly supported by the NSERC Discovery, UAHJIC, and CFIJELF grants. I also appreciate that the university of Alberta fund me with the Alberta Graduate Excellence Scholarship. This webpage template was borrowed from <a href="https://richzhang.github.io/colorization/">here</a>.
+
+			</left>
+				</td>
+			</tr>
+		</table>
+
+</body>
+</html>
