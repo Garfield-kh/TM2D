@@ -1,0 +1,6 @@
+@article{gong2023tm2d,
+  title={TM2D: Bimodality Driven 3D Dance Generation via Music-Text Integration},
+  author={Gong, Kehong and Lian, Dongze and Chang, Heng and Guo, Chuan and Zuo, Xinxin and Jiang, Zihang and Wang, Xinchao},
+  journal={arXiv preprint arXiv:2304.02419},
+  year={2023}
+}
