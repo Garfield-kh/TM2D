@@ -110,7 +110,6 @@ parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
 pathy @ file:///tmp/build/80754af9/pathy_1625085024989/work
 pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
 pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
-Pillow==9.0.1
 pluggy==1.0.0
 preshed @ file:///tmp/build/80754af9/preshed_1621855990824/work
 prometheus-client @ file:///tmp/abs_d3zeliano1/croots/recipe/prometheus_client_1659455100375/work
